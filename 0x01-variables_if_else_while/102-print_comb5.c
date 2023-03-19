@@ -6,27 +6,25 @@
  */
 int main(void)
 {
-	int x, y;
-
-	for (x = '0'; x < '9'; x++)
-	{
-		for (y = x + 1; y <= '9'; y++)
-		{
-			putchar((x / 10) + '0');
-			putchar((x % 10) + '0');
-			putchar (' ');
-			putchar((y / 10) + '0');
-			putchar((y % 10) + '0');
-			putchar(y);
-
-			if (x == 98 && y == 99)
-				continue;
-
-			putchar(',');
+	int a, b;
+	a = 0;
+	while (a <= 98){
+		b = a + 1;
+		while (b <= 99){
+			putchar(a / 10 + '0');
+			putchar(a % 10 + '0');
 			putchar(' ');
+			putchar(b / 10 + '0');
+			putchar(b % 10 + '0');
+			if (a == 98 && b == 99){
+				putchar('\n');
+			} else{
+				putchar(',');
+				putchar(' ');
+			}
+			b++;
 		}
+		a++;
 	}
-	putchar('\n');
-
 	return (0);
 }
