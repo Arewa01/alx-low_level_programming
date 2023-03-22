@@ -1,7 +1,6 @@
 #include "main.h"
-/* print_alphabet- Function that prints the alphabeth in lower cases
- *
- * Return: Always 0 (Success)
+/**
+ * print_alphabet - Function that prints the alphabeth in lower cases
  */
 
 void print_alphabet(void)
@@ -11,4 +10,4 @@ void print_alphabet(void)
 	for (n = 'a'; n <= 'z'; n++)
 		_putchar(n);
 	_putchar('\n');
-}	
+}
