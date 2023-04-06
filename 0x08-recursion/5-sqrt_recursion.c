@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-help_sqrt_recursion - function that returns natural square root
+* help_sqrt_recursion - function that returns natural square root
 * @n: number to be evaluated
 * @i: the square.
 * Return: returns -1 if not natural square, and the actual value if natural.
