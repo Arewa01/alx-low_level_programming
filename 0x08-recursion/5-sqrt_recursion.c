@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 /**
 * _help_sqrt_recursion - function that returns natural square root
 * @n: number to be evaluated
