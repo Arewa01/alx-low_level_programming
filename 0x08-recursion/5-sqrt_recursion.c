@@ -12,7 +12,7 @@ int _help_sqrt_recursion(int n, int i)
 	
 	if (i * i == n)
 		return (i);
-	if (i * i > n)
+	if (n < 0)
 		return (-1);
 	return _help_sqrt_recursion(n, i + 1);
 } 	
