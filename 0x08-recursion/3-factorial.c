@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 * factorial - a function that returns the factorial.
-* @n - the number to be evaluated
+* @n: the number to be evaluated
 * Return: returns -1 for negatives, and 1 for 0.
 */
 int factorial(int n)
