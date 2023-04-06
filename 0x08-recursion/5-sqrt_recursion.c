@@ -7,13 +7,12 @@
 * Return: returns -1 if not natural square, and the actual value if natural.
 */
 int _help_sqrt_recursion(int n, int i)
-{;
-	int result;
-	result = i * i;
+{
+	n = i * i;
 	
-	if (result == n)
+	if (i * i == n)
 		return (i);
-	if (result > n)
+	if (i * i > n)
 		return (-1);
 	return _help_sqrt_recursion(n, i + 1);
 } 	
