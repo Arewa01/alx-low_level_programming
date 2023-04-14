@@ -10,7 +10,7 @@
 int main(int argc, char *argv[] __attribute__((unused)))
 {
 	int real_count = argc - 1;
-	
+
 	printf("%d\n", real_count);
 	return (0);
 }
