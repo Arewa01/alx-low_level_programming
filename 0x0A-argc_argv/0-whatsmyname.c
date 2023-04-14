@@ -8,5 +8,5 @@
 */
 int main(int argc _attribute_((unused)), char *argv[])
 {
-	printf("%s", *argv);
+	printf("%s\n", *argv);
 }
