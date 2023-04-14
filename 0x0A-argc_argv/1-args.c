@@ -3,8 +3,7 @@
 /**
 *main - prints the number of arguments
 *@argc: the argument count
-*@argv: the argument array
-*@real_count: subtracts the program name
+*@argv: the argument arraye
 *Return: Always 0 (Success)
 */
 int main(int argc, char *argv[] __attribute__((unused)))
