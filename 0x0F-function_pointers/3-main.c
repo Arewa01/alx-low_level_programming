@@ -1,6 +1,6 @@
 #include "3-calc.h"
 /**
- * main - program prints the result of the operation, 
+ * main - program prints the result of the operation,
  * followed by a new line
  * @argc: argumment count
  * @argv: argument array
