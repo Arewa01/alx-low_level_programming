@@ -21,11 +21,8 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	while (ops[i].op)
-	{
-		strcmp(ops[i].op, s) == 0;
+	while (ops[i].op && strcmp(ops[i].op, s)){
 		i++;
-	}
 	if (strcmp(ops[i].op, s) == 0)
 	{
 		return (ops[i - 1].f);
