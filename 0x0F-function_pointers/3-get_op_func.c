@@ -20,14 +20,13 @@ int (*get_op_func(char *s))(int, int)
 	{NULL, NULL}
 	};
 	int i = 0;
-	int find = 0;
 
 	while (ops[i].op && !find)
 	{
-		find = ((strcmp(ops[i].op, s) == 0));
+		strcmp(ops[i].op, s) == 0;
 		i++;
 	}
-	if (find)
+	if (strcmp(ops[i].op, s) == 0)
 	{
 		return (ops[i - 1].f);
 	}
