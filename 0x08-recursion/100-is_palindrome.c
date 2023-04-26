@@ -28,7 +28,7 @@ int _strlen_recursion(char *s)
 	return (1  +  _strlen_recursion(s + 1));
 }
 /**
- * check_palindromw - checks the characters for palindrome recursively
+ * check_palindrome - checks the characters for palindrome recursively
  * @s: string to check
  * @i: iterator
  * @len: the length of the string
