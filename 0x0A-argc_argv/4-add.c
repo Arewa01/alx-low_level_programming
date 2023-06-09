@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include "main.h"
 /**
 *main - prints the addition of two numbers
 *@argc: the argument count
@@ -10,23 +9,28 @@
 */
 int main(int argc, char *argv[])
 {
-	int i, add = 0;
+	int i, j, add = 0;
 
 	if (argc == 1)
-		printf("0");
+	{
+		printf("0\n");
 		return (0);
+	}
 	else if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (!isdigit((unsigned char)argv[i][0])
+			for (j = 0; argv[i][j] != '\0'; j++)
 			{
-				printf("Error");
-				return (1);
+				if (!isdigit((unsigned char)argv[i][j]))
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
 			add += atoi(argv[i]);
 		}
-		printf("%d", add);
+		printf("%d\n", add);
 	}
 	return (0);
 }
