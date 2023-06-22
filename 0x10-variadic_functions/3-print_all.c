@@ -37,7 +37,7 @@ void print_all(const char * const format, ...)
 
 				default:
 					i++;
-					break;
+					continue;
 			}
 			separator = ", ";
 			i++;
