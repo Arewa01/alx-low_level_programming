@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * print_list - prints all the element of a linked list
+ * print_list - prints all the element of a list_t list
  * @h: pointer to the list_t
  * Return: the number of nodes
  */
