@@ -1,19 +1,35 @@
 #include "lists.h"
 /**
- * *get_nodeint_at_index - returns the nth node of a listint_t linked list
+ * delete_nodeint_at_index - deletes the node at index index of a listint_t linked list.
  * @head: first node in the linked list
  * @index: index of the node
  * Return: the nth mode of the linked list
  */
-listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	unsigned int i = 0;
-	listint_t *temp = head;
+	listint_t *temp = *head;
+	listint_t *ptr = NULL;
 
-	while (temp && i < index)
+	if (*head == NULL)
+		return (-1);
+	if (index == 0)
 	{
+		*head = (*head)->next;
+		free(temp);
+		return (1);
+	}
+	while (i < index - 1)
+	{
+		if (!temp || !(temp->next))
+			return (-1);
 		temp = temp->next;
 		i++;
 	}
-	return (temp ? temp : NULL);
+
+	ptr = temp->next;
+	temp->next = ptr->next;
+	free(ptr);
+
+	return (1);
 }
