@@ -1,11 +1,11 @@
 #include "main.h"
-#include <string.h>
+
+unsigned int _strlen(const char *s);
 /**
  * binary_to_uint - a function that converts a binary number
  * @b: the string that contains the binary numbers
  * Return: the converted number, or 0.
  */
-unsigned int _strlen(const char *s);
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int i;
@@ -22,13 +22,11 @@ unsigned int binary_to_uint(const char *b)
 	}
 	return (decimal);
 }
-
 /**
  * _strlen - Returns the length of a string
  * @s: The string character
  * Return: The character length
  */
-
 unsigned int _strlen(const char *s)
 {
 	int len = 0;
